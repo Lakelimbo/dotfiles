@@ -1,0 +1,153 @@
+add_newline = true
+
+format = """
+$os\
+$directory\
+$container\
+$git_branch\
+$git_status\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$cmd_duration\
+$status\
+$line_break[❯ ](bold purple)
+"""
+
+continuation_prompt = "[∙   ](fg:black)"
+
+[line_break]
+disabled = false
+
+[status]
+symbol = "✗"
+not_found_symbol = "󰍉 Not Found"
+not_executable_symbol = " Can't Execute"
+sigint_symbol = "󰂭 "
+signal_symbol = "󱑽 "
+success_symbol = ""
+format = "[$symbol](fg:red)"
+map_symbol = true
+disabled = false
+
+[cmd_duration]
+min_time = 1000
+format = "[$duration ](fg:yellow)"
+
+[container]
+symbol = " 󰏖"
+format = "[$symbol ](yellow dimmed)"
+
+[directory]
+format = "[ $path](bold fg:white) [$read_only](fg:yellow)"
+read_only = " "
+truncate_to_repo = true
+truncation_length = 4
+truncation_symbol = ""
+
+[git_branch]
+symbol = ""
+style = ""
+format = "[ $symbol $branch](fg:purple)(:$remote_branch)"
+
+[os]
+disabled = false
+format = "[](fg:blue)[$symbol](bg:blue fg:black)[](fg:blue)"
+
+[os.symbols]
+Arch = " "
+Alpine = " "
+Debian = " "
+EndeavourOS = " "
+Fedora = " "
+NixOS = " "
+openSUSE = " "
+SUSE = " "
+Ubuntu = " "
+Macos = " "
+
+[python]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[nodejs]
+symbol = "󰛦"
+format = "[$symbol ](green)"
+
+[bun]
+symbol = "󰛦"
+format = "[$symbol ](blue)"
+
+[deno]
+symbol = "󰛦"
+format = "[$symbol ](blue)"
+
+[lua]
+symbol = "󰢱"
+format = "[$symbol ](blue)"
+
+[rust]
+symbol = ""
+format = "[$symbol ](red)"
+
+[java]
+symbol = ""
+format = "[$symbol ](red)"
+
+[c]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[golang]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[dart]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[elixir]
+symbol = ""
+format = "[$symbol ](purple)"

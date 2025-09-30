@@ -1,0 +1,161 @@
+.bar-widget {
+  padding: 0.666rem 1rem;
+  margin: 0;
+  border-radius: 2rem 2rem 0 0;
+  transition: 0.3s;
+  background-color: rgba($surface, 0.5);
+}
+
+.clock {
+  @include hover($surface);
+
+  color: $onSurface;
+  background-color: $surface;
+  font-size: 1rem;
+  border-radius: 0.333rem 1rem 1rem 0.333rem;
+  padding: 0 0.75rem;
+  margin: 0 0.15rem;
+  transition: 0.3s;
+  min-height: 2.5rem;
+
+  &.active {
+    background-color: $primary;
+    color: $surface;
+
+    .record-indicator {
+      color: $surface;
+    }
+
+    @include hover($primary);
+  }
+}
+
+.kb-layout {
+  background-color: $surface;
+  border-radius: 0.333rem;
+  padding: 0 0.75rem;
+  margin: 0 0.15rem;
+  transition: 0.3s;
+  font-size: 1rem;
+
+  @include hover($surface); 
+}
+
+.updates {
+  background-color: $surface;
+  border-radius: 0.333rem;
+  padding: 0 0.75rem;
+  margin: 0 0.15rem;
+  font-size: 1rem;
+}
+
+.pinned-app {
+  margin: 0 0.25rem;
+  transition: 0.3s;
+  padding: 0 0.15rem;
+  border-radius: 0.25rem;
+}
+
+.pinned-app:hover {
+  background-color: rgba(white, 0.2);
+}
+
+.tray {
+  background-color: $surface;
+  padding: 0 1rem;
+  margin: 0 0.15rem;
+  border-radius: 1rem 0.25rem 0.25rem 1rem;
+}
+
+.distro-launcher {
+  @include hover($surface);
+
+  background-color: $surface;
+  padding: 0 0.5rem;
+  margin-right: 0.15rem;
+  border-radius: 1rem 0.25rem 0.25rem 1rem;
+}
+
+.workspaces {
+  border-radius: 0.25rem 1rem 1rem 0.25rem;
+  padding: 0.5rem;
+  background-color: $surface;
+  margin: 0 0.15rem;
+  margin-left: 0;
+}
+
+.workspace {
+  @include hover($primaryContainer);
+
+  border-radius: 1rem;
+  margin: 0 0.25rem;
+  min-width: 0.7rem;
+  min-height: 0.7rem;
+  transition: 0.3s;
+
+  &.active {
+    @include hover($primary);
+    min-width: 2rem;
+  }
+}
+
+@keyframes recorder-animation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.record-indicator {
+  color: $error;
+}
+
+.record-indicator.active {
+  animation: recorder-animation 2s infinite;
+}
+
+.battery-item {
+  margin: 0 0.25rem;
+}
+
+.battery-scale {
+  min-width: 5rem;
+  all: unset;
+
+  * {
+    all: unset;
+  }
+}
+
+.battery-scale trough,
+.battery-scale trough highlight {
+  background: $surface;
+  border-radius: 1rem;
+  min-height: 1.3rem;
+  min-width: 5rem;
+}
+
+.battery-scale trough highlight {
+  background: $primary;
+}
+
+.battery-icon {
+  color: $onSurface;
+  margin-right: 0.3rem;
+}
+
+.battery-percent {
+  color: $onSurface;
+  margin-right: 0.3rem;
+}
