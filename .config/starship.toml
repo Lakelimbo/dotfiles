@@ -7,9 +7,8 @@ $container\
 $git_branch\
 $git_status\
 $c\
-$cmake\
-$cobol\
-$daml\
+$cpp\
+$crystal\
 $dart\
 $deno\
 $dotnet\
@@ -19,7 +18,6 @@ $erlang\
 $fennel\
 $gleam\
 $golang\
-$guix_shell\
 $haskell\
 $haxe\
 $helm\
@@ -31,25 +29,17 @@ $lua\
 $nim\
 $nodejs\
 $ocaml\
-$opa\
 $perl\
 $php\
-$pulumi\
-$purescript\
 $python\
-$quarto\
 $raku\
 $rlang\
-$red\
 $ruby\
 $rust\
 $scala\
 $solidity\
 $swift\
-$terraform\
-$typst\
 $vlang\
-$vagrant\
 $zig\
 $cmd_duration\
 $status\
@@ -90,7 +80,7 @@ truncation_symbol = ""
 [git_branch]
 symbol = ""
 style = ""
-format = "[ $symbol $branch](fg:purple)(:$remote_branch)"
+format = "[ $symbol $branch ](fg:purple)(:$remote_branch)"
 
 [os]
 disabled = false
@@ -107,47 +97,149 @@ openSUSE = " "
 SUSE = " "
 Ubuntu = " "
 Macos = " "
-
-[python]
-symbol = ""
-format = "[$symbol ](yellow)"
-
-[nodejs]
-symbol = "󰛦"
-format = "[$symbol ](green)"
-
-[bun]
-symbol = "󰛦"
-format = "[$symbol ](blue)"
-
-[deno]
-symbol = "󰛦"
-format = "[$symbol ](blue)"
-
-[lua]
-symbol = "󰢱"
-format = "[$symbol ](blue)"
-
-[rust]
-symbol = ""
-format = "[$symbol ](red)"
-
-[java]
-symbol = ""
-format = "[$symbol ](red)"
+Windows = " "
 
 [c]
 symbol = ""
 format = "[$symbol ](blue)"
 
-[golang]
-symbol = ""
+[bun]
+symbol = ""
+format = "[$symbol ](pink)"
+
+[cpp]
+symbol = ""
 format = "[$symbol ](blue)"
 
+[crystal]
+symbol = ""
+format = "[$symbol ](black)"
+
 [dart]
-symbol = ""
-format = "[$symbol ](blue)"
+symbol = ""
+format = "[$symbol ](green)"
+
+[deno]
+symbol = ""
+format = "[$symbol ](black)"
+
+[dotnet]
+symbol = "󰪮"
+format = "[$symbol ](green)"
 
 [elixir]
 symbol = ""
 format = "[$symbol ](purple)"
+
+[elm]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[erlang]
+symbol = ""
+format = "[$symbol ](red)"
+
+[fennel]
+symbol = ""
+format = "[$symbol ](white)"
+
+[gleam]
+symbol = ""
+format = "[$symbol ](pink)"
+
+[golang]
+symbol = "󰟓"
+format = "[$symbol ](blue)"
+
+[gradle]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[haskell]
+symbol = ""
+format = "[$symbol ](purple)"
+
+[haxe]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[helm]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[java]
+symbol = ""
+format = "[$symbol ](red)"
+
+[julia]
+symbol = ""
+format = "[$symbol ](green)"
+
+[kotlin]
+symbol = ""
+format = "[$symbol ](pink)"
+
+[lua]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[nim]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[nodejs]
+symbol = ""
+format = "[$symbol ](green)"
+
+[ocaml]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[perl]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[php]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[python]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[raku]
+symbol = ""
+format = "[$symbol ](purple)"
+
+[rlang]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[ruby]
+symbol = ""
+format = "[$symbol ](red)"
+
+[rust]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[scala]
+symbol = ""
+format = "[$symbol ](red)"
+
+[solidity]
+symbol = ""
+format = "[$symbol ](white)"
+
+[swift]
+symbol = ""
+format = "[$symbol ](yellow)"
+
+[vlang]
+symbol = ""
+format = "[$symbol ](blue)"
+
+[zig]
+symbol = ""
+format = "[$symbol ](yellow)"
+
