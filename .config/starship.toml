@@ -113,7 +113,7 @@ format = "[$symbol ](blue)"
 
 [crystal]
 symbol = ""
-format = "[$symbol ](black)"
+format = "[$symbol ](white)"
 
 [dart]
 symbol = ""
@@ -121,7 +121,7 @@ format = "[$symbol ](green)"
 
 [deno]
 symbol = ""
-format = "[$symbol ](black)"
+format = "[$symbol ](white)"
 
 [dotnet]
 symbol = "󰪮"
@@ -242,4 +242,3 @@ format = "[$symbol ](blue)"
 [zig]
 symbol = ""
 format = "[$symbol ](yellow)"
-

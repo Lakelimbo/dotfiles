@@ -21,7 +21,13 @@ alias ls='ls --color'
 # variables
 export EDITOR="neovim"
 export VISUAL="$EDITOR"
-export PATH=$PATH:$(go env GOPATH)/bin # for things like Air (Golang)
+
+go_path=$(go env GOPATH)
+export PATH=$PATH:${go_path}/bin
+
+export GEM_HOME=$(gem env user_gemhome)
+export PATH=$PATH:${GEM_HOME}/bin
+
 export PATH=$PATH:$HOME/.cargo/bin
 
 # The following lines were added by compinstall
